@@ -1,7 +1,5 @@
 {
   "name": "Bai1ActionSheet",
-  "integrations": {
-    "cordova": {}
-  },
+  "integrations": {},
   "type": "ionic-angular"
 }

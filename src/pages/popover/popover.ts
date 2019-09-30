@@ -8,13 +8,9 @@ import { ViewController } from 'ionic-angular';
 export class PopoverPage {
   
   constructor(public viewCtrl: ViewController) {}
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PopoverPage');
-  }
-
-
-  close() {
-    this.viewCtrl.dismiss();
+  
+  close(n: any) {
+    this.viewCtrl.dismiss(n);
   }
 
 }

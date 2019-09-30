@@ -1,5 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { PopoverController } from 'ionic-angular';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'social-card',
@@ -8,7 +7,7 @@ import { PopoverController } from 'ionic-angular';
 export class SocialCard {
     @Output() onClickSub = new EventEmitter();
 
-    onClickActions(ev) {
-        console.log('ev', ev);
+    onClickActions(num) {
+        this.onClickSub.emit(num)
     }
 }

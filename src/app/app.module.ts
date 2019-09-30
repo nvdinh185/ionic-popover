@@ -1,20 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
+import { NgModule } from '@angular/core';
+import { IonicApp, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
+import { SegmentsPage } from '../pages/segments/segments';
 import { HomePage } from '../pages/home/home';
-import { SocialCard } from '../components/social-card/social-card';
 import { PopoverPage } from '../pages/popover/popover';
+import { SocialCard } from '../components/social-card/social-card';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    SocialCard,
-    PopoverPage
+    SegmentsPage,
+    PopoverPage,
+    SocialCard
   ],
   imports: [
     BrowserModule,
@@ -24,12 +24,9 @@ import { PopoverPage } from '../pages/popover/popover';
   entryComponents: [
     MyApp,
     HomePage,
+    SegmentsPage,
     PopoverPage
   ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+  providers: []
 })
 export class AppModule {}
