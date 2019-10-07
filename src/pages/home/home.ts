@@ -32,7 +32,7 @@ export class HomePage {
     Object.defineProperty(object1, 'property1', {
       value: 42,
       writable: true, //cho phep sua du lieu sau khi gan gia tri vao
-      enumerable: true,
+      enumerable: true,//cho phep gan thanh thuoc tinh truy van sau khi hoan thanh
       configurable: true
     });
 
